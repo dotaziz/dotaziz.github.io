@@ -1,23 +1,20 @@
 # Setup
 title: Abdul Aziz
-url: "https://azizali.me" # Ensure URL is a full URL with "https://"
-baseurl: "/" # Keep empty if the site is at the root domain
+url: dotaziz.github.io
+baseurl: "/"
 paginate: 5
 permalink: pretty
 
 # About/contact
 author:
   name: Abdul Aziz
-  url: "https://twitter.com/"
+  url: https://twitter.com/mdo
   email: azizalialhassan@gmail.com
 
-# Gems/Plugins
+# Gems
 plugins:
   - jekyll-paginate
-  - jekyll-gist
-  - jekyll-sitemap
-  - jekyll-seo-tag # Adds SEO metadata
 
 # Custom vars
 version: 1.1.0
-google_analytics_id: "" # Add your Google Analytics ID here if available
+google_analytics_id: #
