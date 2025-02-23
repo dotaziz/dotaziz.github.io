@@ -1,7 +1,7 @@
 # Setup
 title: Abdul Aziz
 url: https://azizali.me
-baseurl: ""
+baseurl: "/"
 paginate: 5
 permalink: pretty
 
