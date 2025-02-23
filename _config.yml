@@ -1,7 +1,7 @@
 # Setup
 title: Abdul Aziz
 url: dotaziz.github.io
-baseurl: ""
+baseurl: "/dotaziz.github.io"
 paginate: 5
 permalink: pretty
 
