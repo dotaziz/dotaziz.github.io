@@ -1,7 +1,7 @@
 # Setup
 title: Abdul Aziz
 url: "https://azizali.me" # Ensure URL is a full URL with "https://"
-baseurl: "dotaziz.github.io" # Keep empty if the site is at the root domain
+baseurl: "" # Keep empty if the site is at the root domain
 paginate: 5
 permalink: pretty
 
