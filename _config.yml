@@ -5,6 +5,8 @@ baseurl: ""
 paginate: 5
 permalink: pretty
 
+include: ["_pages"]
+
 # About/contact
 author:
   name: Abdul Aziz

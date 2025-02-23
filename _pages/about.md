@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about/
 ---
 
 My name Abdul Aziz. I am an IT (Bsc Information Technoogy) student at the University of Cape Coast, currently in my third year.
