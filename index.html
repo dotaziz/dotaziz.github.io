@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="welcome-message">
+  <p>
+    Hi, I am Abdul Aziz from Accra, Ghana. I occasionally write on things I find
+    interesting and worth playing around with. <br />
+    These thoughts are just from a random guy on the internet, living at a
+    random corner of a country in West Africa.
+  </p>
+</div>
+
+<div class="posts">
+  {% for post in paginator.posts %}
+
+  <a href="{{ post.url | absolute_url }}">
+    {{ post.date | date_to_string }} » {{ post.title }}
+  </a>
+  <br />
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+  <a
+    class="pagination-item older"
+    href="{{ paginator.next_page_path | absolute_url }}"
+    >Older</a
+  >
+  {% else %}
+  <span class="pagination-item older">Older</span>
+  {% endif %} {% if paginator.previous_page %} {% if paginator.page == 2 %}
+  <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+  {% else %}
+  <a
+    class="pagination-item newer"
+    href="{{ paginator.previous_page_path | absolute_url }}"
+    >Newer</a
+  >
+  {% endif %} {% else %}
+  <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
