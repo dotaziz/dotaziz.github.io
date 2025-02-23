@@ -1,14 +1,14 @@
 # Setup
 title: Abdul Aziz
-url: dotaziz.github.io
-baseurl: "/"
+url: https://azizali.me
+baseurl: ""
 paginate: 5
 permalink: pretty
 
 # About/contact
 author:
   name: Abdul Aziz
-  url: https://twitter.com/mdo
+  url: https://github.com/dotaziz
   email: azizalialhassan@gmail.com
 
 # Gems
