@@ -1,9 +1,8 @@
 # Setup
 title: Abdul Aziz
-url: dotaziz.github.io
-baseurl: "/dotaziz.github.io"
+url: azizali.me
+baseurl: ""
 paginate: 5
-permalink: pretty
 
 # About/contact
 author:
