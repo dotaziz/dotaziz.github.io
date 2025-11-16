@@ -1,0 +1,3 @@
+Placeholder favicon.ico
+This is a simple placeholder file to satisfy requests for /favicon.ico so the Jekyll server no longer reports "ERROR '/favicon.ico' not found."
+You can replace this file with a real favicon image (binary .ico) later.
