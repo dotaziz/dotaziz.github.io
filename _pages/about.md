@@ -3,26 +3,12 @@ layout: page
 title: About
 ---
 
-Sidey is a simple and minimalistic jekyll blogging theme.
 
-### Features
+My name Abdul Aziz. I am an IT (Bsc Information Technoogy) student at the University of Cape Coast, currently in my third year.
 
-- Responsive design
-- Inline CSS
-- Anchor headings
-- Search
-- Tags & tag pages
-- Security headers (for Netlify hosting)
-- 404 page
-- Compressed CSS and HTML
-- 100/100 score on Lighthouse, Page Speed Insights & Webpagetest
-- Robots.txt
-- Atom & Json feeds
-- Sass
-- Seo optimized (Twitter cards, Facebook Open Graph, Schema.org)
-- Ultra fast (Only ~5kb of CSS)
-- Sidebar navigation
+Aside my fulltime studies, I am also helping to build the next-gen insurance solutions for Africa with [Insurerity Digital](https://insurerity.com/).
+Free time? I spend sometime with [https://achieversghana.org/](https://achieversghana.org/), introducing kids to programming and anything tech.
 
-### Screenshot
+I guess that's all for now.
 
-![Screenshot](screenshot.png)
+I'll be happy to collaborate with any motivated individual in building systems! If you're interested, kindly shoot me an email.
