@@ -5,7 +5,6 @@ categories: [politics, campus]
 description: Reflections after losing a student election; turnout, process flaws, and a renewed pledge to engage.
 tags: [election, student-politics, reflection]
 ---
-We lost the election.
 
 This is a follow-up to [“Going on a Campaign”](/2025/07/19/going-on-a-campaign-tour).
 
