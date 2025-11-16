@@ -29,6 +29,5 @@ If nothing else, this campaign trail re-emphasized a few key truths:
     
 - **Just showing up puts you ahead of many.**
 
-
 I've gotten ideas as to how to go about the campaign.
-I'll update the next tour.
+I'll test them on the next tour and report back on what works.

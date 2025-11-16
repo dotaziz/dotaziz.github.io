@@ -3,10 +3,10 @@ layout: post
 title: "Ascending Life's Peaks: Lessons from Rock Climbing in 2023"
 author: aziz
 image:
-  path: /assets/images/ref-1.jpg
+  path: /assets/img/ref-1.jpg
   alt: "Rock Climbing Image"
 ---
-
+![Rock Climbing](/assets/img/ref-1.jpg)
 
 I began 2023 on a positive note, balancing full-time remote work with education and exploring various parts of Ghana for leisure. During my travels, I embraced new experiences like kayaking and rock climbing, the latter proving to be a life-changing adventure. It initially evoked fear, but I soon realized it boiled down to three principles: lean, feed, and step.
 
