@@ -1,5 +1,5 @@
 site: Abdul Aziz's Blog
-url: "https://dotaziz.github.io"
+url: "https://azizali.me" # ← Your custom domain
 title: Abdul Aziz
 description: The Occasional Insights from a Reflective Voyager
 twitter:
@@ -14,7 +14,7 @@ author:
   url: #yoururl
 permalink: pretty
 
-baseurl: "/dotaziz.github.io"
+baseurl: ""
 
 highlighter: none
 
