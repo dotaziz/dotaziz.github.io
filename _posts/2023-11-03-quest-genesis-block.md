@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quest's Genesis Block"
+title:  Quest's Genesis Block
 author: aziz
 categories: [Blogging, Software Craftsmanship]
 ---
