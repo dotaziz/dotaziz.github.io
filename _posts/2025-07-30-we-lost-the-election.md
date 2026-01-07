@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "We Lost the Election"
-categories: [politics, campus]
 description: Reflections after losing a student election; turnout, process flaws, and a renewed pledge to engage.
-tags: [election, student-politics, reflection]
+tags: [election, student-politics, reflection, campus]
 ---
 
 This is a follow-up to [“Going on a Campaign”](/2025/07/19/going-on-a-campaign-tour).

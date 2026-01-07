@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  Going on a campaign tour(campus)
-categories: [politics, campus]
+tags: [politics, campus]
 description: This week, I stepped into unfamiliar territory...election campaigning...
-tags: [new]
 ---
 
 This week, I stepped into unfamiliar territory: election campaigning. Not for myself, but for a friend "Governor", who's running for President of CANSSAG-UCC.

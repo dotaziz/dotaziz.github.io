@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  Ginger Tea Thoughts
-categories: [Creative writing]
+tags: [Creative writing]
 description: A short poem about the human urge to keep striving.
-tags: [new]
 ---
 
 I tried to write a line of code <br>
