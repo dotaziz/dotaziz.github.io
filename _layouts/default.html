@@ -4,15 +4,20 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="en" >
-  {% include head.html %}  
+  {% include head.html %}
+
   <body>
+    <div style="text-align: center; padding: 3rem 1rem 2rem; max-width: 42rem; margin: 0 auto;">
+      <h1 style="font-size: 1.8rem; font-weight: 600; margin-bottom: 0.5rem; line-height: 1.2;">{{ site.title }}</h1>
+      <p style="color: #666; font-size: 0.95rem; font-style: italic; margin: 0;">{{ site.description }}</p>
+    </div>
     <main>
-	    
+
 	    {% include navigation.html %}
-	    
+
         {{ content }}
-        	    
+
     </main>
-            
+
   </body>
 </html>
