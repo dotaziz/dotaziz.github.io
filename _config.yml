@@ -16,20 +16,17 @@ twitter:
 
 # Author Information
 author:
-  twitter: yourusername
   name: Abdul Aziz
   avatar: /favicon.png
-  email: your.email@example.com
+  email: dotazizali@gmail.com
   url: https://azizali.me
 
 # Social Links (for SEO and schema.org)
 social:
   name: Abdul Aziz
-  bluesky: https://bsky.app/profile/yourusername
-  linkedin: https://www.linkedin.com/in/yourusername
+  linkedin: https://www.linkedin.com/in/azizalialhassan
   links:
-    - https://twitter.com/yourusername
-    - https://github.com/yourusername
+    - https://github.com/dotaziz
     - https://azizali.me
 
 # Open Graph defaults
