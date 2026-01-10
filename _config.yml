@@ -2,16 +2,38 @@ site: Abdul Aziz's Blog
 url: https://azizali.me # ← Your custom domain
 title: Notes By Aziz
 description: The Occasional Insights from a Reflective Voyager
+
+# SEO Settings
+lang: en_US
+logo: /favicon.png
+tagline: The Occasional Insights from a Reflective Voyager
+
+# Social Media
 twitter:
   username: #yourusername
-  card: summary
+  card: summary_large_image
   creator: #yourusername
+
+# Author Information
 author:
   twitter: #yourusername
-  name: #yourusername
-  avatar:
+  name: Abdul Aziz
+  avatar: #/path/to/avatar.jpg
   email: #youremail
-  url: #yoururl
+  url: https://azizali.me
+
+# Social Links (for SEO and schema.org)
+social:
+  name: Abdul Aziz
+  links:
+    - https://twitter.com/#yourusername
+    - https://github.com/#yourusername
+    - https://azizali.me
+
+# Open Graph defaults
+defaults_og:
+  image: /favicon.png
+  type: website
 permalink: pretty
 
 baseurl: ""
