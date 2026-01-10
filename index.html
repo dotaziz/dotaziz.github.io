@@ -2,11 +2,60 @@
 layout: default
 ---
 
-<section class="posts">
-<ul>
-{% for post in site.posts %}
-<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time></li>
-{% endfor %}
-</ul>
-</section>
+<div class="intro">
+  <h1>Hi, I'm Abdul Aziz.</h1>
+  <!--<h2>{{ site.description }}</h2>-->
+</div>
 
+<div class="intro-content">
+  <p>I'm an IT student at the University of Cape Coast, currently in my third year.</p>
+  <p>I help build the next-gen insurance solutions for Africa with <a href="https://insurerity.com/" target="_blank">Insurerity Digital</a>.</p>
+  <p>If you'd like to get in touch, please write me an <a href="mailto:{{ site.author.email }}">email</a>.</p>
+</div>
+
+<div class="content-sections">
+  <div class="sections-container">
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <!--<li class="list-item">
+          <span class="date-mobile">Coming Soon</span>
+          <div class="item-header">
+            <a href="#" class="item-title">Project 1</a>
+            <span class="dotted-line"></span>
+            <span class="date">Coming Soon</span>
+          </div>
+          <div class="item-description-row">
+            <p class="item-description">Add your first project here</p>
+          </div>
+        </li>-->
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Blog</h2>
+      <ul>
+        {% for post in site.posts limit:10 %}
+        <li class="list-item">
+          <span class="date-mobile">{{ post.date | date: "%b %Y" }}</span>
+          <div class="item-header">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="item-title">{{ post.title }}</a>
+            <span class="dotted-line"></span>
+            <span class="date">{{ post.date | date: "%b %Y" }}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--<div class="newsletter-signup">
+  <h3>Stay in the loop</h3>
+  <form action="https://buttondown.com/api/emails/embed-subscribe/yourusername" method="post">
+    <div class="form-row">
+      <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
+      <button type="submit">Subscribe</button>
+    </div>
+  </form>
+</div>-->
