@@ -10,24 +10,26 @@ tagline: The Occasional Insights from a Reflective Voyager
 
 # Social Media
 twitter:
-  username: #yourusername
+  username: yourusername
   card: summary_large_image
-  creator: #yourusername
+  creator: yourusername
 
 # Author Information
 author:
-  twitter: #yourusername
+  twitter: yourusername
   name: Abdul Aziz
-  avatar: #/path/to/avatar.jpg
-  email: #youremail
+  avatar: /favicon.png
+  email: your.email@example.com
   url: https://azizali.me
 
 # Social Links (for SEO and schema.org)
 social:
   name: Abdul Aziz
+  bluesky: https://bsky.app/profile/yourusername
+  linkedin: https://www.linkedin.com/in/yourusername
   links:
-    - https://twitter.com/#yourusername
-    - https://github.com/#yourusername
+    - https://twitter.com/yourusername
+    - https://github.com/yourusername
     - https://azizali.me
 
 # Open Graph defaults
