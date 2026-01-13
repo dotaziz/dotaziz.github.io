@@ -7,27 +7,25 @@ layout: compress
   {% include head.html %}
 
   <body>
-    <nav class="no-print" aria-label="Top">
-      <div class="nav-inner">
-        <a href="{{ site.baseurl }}/" class="logo">
-          <div class="logo-text">
-            <span class="logo-hash">#</span>
-            <span class="logo-rest">otes</span>
-            <span class="logo-divider">by</span>
-            <span class="logo-aziz">Aziz</span>
+      <nav class="no-print" aria-label="Main navigation">
+        <div class="nav-inner">
+          <a href="{{ site.baseurl }}/" class="logo" aria-label="dotaziz home">
+              .aziz
+          </a>
+          <div class="header-nav">
+            <ul>
+              {% for item in site.data.navigation.links %}
+                <li>
+                  <a href="{{ item.url }}"
+                     {% if item.url == page.url %}class="active" aria-current="page"{% endif %}>
+                    {{ item.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
           </div>
-        </a>
-
-        <nav class="header-nav">
-          <ul>
-            {% for item in site.data.navigation.links %}
-              <li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </nav>
-      </div>
-    </nav>
-
+        </div>
+      </nav>
     <main>
       {{ content }}
     </main>
