@@ -1,7 +1,7 @@
 site: Abdul Aziz's Blog
 url: https://azizali.me # ← Your custom domain
-title: Notes By Aziz
-description: The Occasional Insights from a Reflective Voyager
+title: Abdul Aziz
+description: Software engineer and student sharing insights on technology, programming, and personal growth.
 
 # SEO Settings
 lang: en_US
@@ -10,9 +10,9 @@ tagline: The Occasional Insights from a Reflective Voyager
 
 # Social Media
 twitter:
-  username: yourusername
+  username: dotaziz
   card: summary_large_image
-  creator: yourusername
+  creator: dotaziz
 
 # Author Information
 author:
@@ -33,6 +33,15 @@ social:
 defaults_og:
   image: /favicon.png
   type: website
+
+# SEO Plugin Settings
+webmaster_verifications:
+  google: # Add your Google Search Console verification code here
+  bing: # Add your Bing verification code here
+
+# Analytics (optional)
+# google_analytics: UA-XXXXXXXXX-X
+# google_site_verification: # Add verification meta tag content
 permalink: pretty
 
 baseurl: ""
@@ -54,6 +63,9 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
+
+paginate: 10
+paginate_path: "/page:num/"
 
 collections:
   pages:
