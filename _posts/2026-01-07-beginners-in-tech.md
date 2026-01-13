@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  Beginners In Tech
+title: Beginners In Tech
 author: aziz
 tags: [Career Development, campus]
+description: Advice for tech beginners navigating the learning journey, avoiding buzzwords, and building meaningful skills in programming and technology.
+image: /favicon.png
 ---
 
 
