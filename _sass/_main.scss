@@ -20,8 +20,13 @@ $white: #ffffff;
 
 body {
     font-family:
-        "Merriweather", ui-serif, Georgia, Cambria, "Times New Roman", Times,
-        serif;
+        "Inter",
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     line-height: 1.5;
@@ -32,94 +37,58 @@ body {
 
 // Navigation
 nav {
-    max-width: 80rem;
+    max-width: 48rem;
     margin: 0 auto;
-    margin-top: 1.5rem;
-    padding: 0 2rem;
+    padding: 1.5rem 1rem 2rem 1rem;
+
+    @media (min-width: 640px) {
+        padding: 2rem 1.5rem 2.5rem 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+        padding: 2.5rem 2rem 3rem 2rem;
+    }
 
     .nav-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0.75rem 0;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid $stone-300;
+
+        @media (min-width: 640px) {
+            padding-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            padding-bottom: 2.5rem;
+        }
     }
 
     .logo {
         text-decoration: none;
-        display: inline-block;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+        font-size: 1.5rem; // ~24px mobile
+        font-weight: 700;
+        color: $stone-700;
+        transition: all 0.2s ease;
+        letter-spacing: -0.02em;
+
+        &::first-letter {
+            letter-spacing: 0.05em; // Adds space after the dot
+        }
+
+        @media (min-width: 640px) {
+            font-size: 1.875rem; // ~30px
+        }
+
+        @media (min-width: 768px) {
+            font-size: 2.125rem; // ~34px
+        }
 
         &:hover {
-            .logo-hash {
-                color: $white;
-                background: linear-gradient(135deg, $cyan-600, #0ea5e9);
-                transform: rotate(-5deg) scale(1.1);
-                box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
-            }
-
-            .logo-rest {
-                letter-spacing: 0.05em;
-                color: $cyan-600;
-            }
-
-            .logo-divider {
-                transform: rotate(15deg) scale(1.2);
-                color: $cyan-600;
-            }
-
-            .logo-aziz {
-                color: $stone-700;
-                transform: translateX(2px);
-            }
-        }
-
-        .logo-text {
-            display: flex;
-            align-items: center;
-            gap: 0.1rem;
-        }
-
-        .logo-hash {
-            font-family: "Lora", ui-serif, Georgia, serif;
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: $white;
-            background: linear-gradient(135deg, $stone-700, $stone-600);
-            padding: 0.15rem 0.45rem;
-            border-radius: 0.25rem;
-            line-height: 1;
-            display: inline-block;
-            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-            box-shadow: 0 2px 8px rgba(68, 64, 60, 0.2);
-            margin-right: -0.05rem;
-        }
-
-        .logo-rest {
-            font-family: "Lora", ui-serif, Georgia, serif;
-            font-size: 1.3rem;
-            font-weight: 500;
-            color: $stone-700;
-            letter-spacing: -0.01em;
-            transition: all 0.3s ease;
-        }
-
-        .logo-divider {
-            font-family: "Nunito", ui-sans-serif, system-ui, sans-serif;
-            font-size: 1.4rem;
-            font-weight: 300;
-            color: $stone-400;
-            margin: 0 0.35rem;
-            transform-origin: center;
-            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-            opacity: 0.6;
-        }
-
-        .logo-aziz {
-            font-family: "Merriweather", ui-serif, Georgia, serif;
-            font-size: 1.3rem;
-            font-weight: 400;
             color: $stone-600;
-            font-style: italic;
-            transition: all 0.3s ease;
+            transform: translateY(-1px);
         }
     }
 
@@ -128,11 +97,21 @@ nav {
 
         ul {
             display: flex;
-            gap: 1.5rem;
+            gap: 0.5rem;
             list-style: none;
             margin: 0;
             padding: 0;
             justify-content: flex-end;
+            flex-wrap: wrap;
+
+            @media (min-width: 640px) {
+                gap: 1rem;
+            }
+
+            @media (min-width: 768px) {
+                gap: 1.5rem;
+                flex-wrap: nowrap;
+            }
         }
 
         li {
@@ -142,26 +121,93 @@ nav {
         a {
             color: $stone-500;
             text-decoration: none;
-            font-size: 0.95rem;
-            font-family: "Nunito", ui-sans-serif, system-ui, sans-serif;
-            transition: color 0.2s;
+            font-size: 0.8125rem; // ~13px mobile
+            font-family: "Inter", system-ui, -apple-system, sans-serif;
+            font-weight: 400;
+            transition: all 0.2s ease;
             white-space: nowrap;
+            padding: 0.5rem 0.625rem;
+            display: inline-block;
+            border-radius: 0.25rem;
+            position: relative;
 
-            &:hover {
-                color: $cyan-600;
+            // Touch target optimization
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+
+            @media (min-width: 640px) {
+                font-size: 0.875rem; // ~14px
+                padding: 0.625rem 0.875rem;
+            }
+
+            @media (min-width: 768px) {
+                padding: 0.75rem 1rem;
+            }
+
+            &:hover,
+            &:focus-visible {
+                color: $stone-700;
+                background-color: rgba(214, 211, 209, 0.3);
+                outline: none;
+            }
+
+            // Better focus state
+            &:focus-visible {
+                box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.3);
             }
 
             &.active {
                 color: $stone-700;
                 font-weight: 500;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0.375rem;
+                    left: 0.625rem;
+                    right: 0.625rem;
+                    height: 2px;
+                    background-color: $cyan-600;
+
+                    @media (min-width: 640px) {
+                        bottom: 0.5rem;
+                        left: 0.875rem;
+                        right: 0.875rem;
+                    }
+
+                    @media (min-width: 768px) {
+                        left: 1rem;
+                        right: 1rem;
+                    }
+                }
             }
         }
     }
 }
 
+// Optional: Mobile menu toggle (if you want hamburger for very small screens)
+@media (max-width: 480px) {
+    nav {
+        .nav-inner {
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .header-nav {
+            width: 100%;
+            margin-left: 0;
+
+            ul {
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    }
+}
 // Main content container
 main {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 // Introduction section
@@ -175,7 +221,7 @@ main {
     h1 {
         font-size: 2.25rem;
         font-weight: 600;
-        font-family: "Lora", ui-serif, Georgia, serif;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
         margin: 0;
         line-height: 1.2;
     }
@@ -244,7 +290,7 @@ main {
         h2 {
             font-size: 1.875rem;
             font-weight: 500;
-            font-family: "Lora", ui-serif, Georgia, serif;
+            font-family: "Inter", system-ui, -apple-system, sans-serif;
             color: $stone-700;
             margin-bottom: 1.5rem;
         }
@@ -328,7 +374,7 @@ main {
     }
 
     .blog-link {
-        font-family: "Nunito", ui-sans-serif, system-ui, sans-serif;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
         font-size: 0.875rem;
         line-height: 1.25;
         font-weight: 300;
@@ -347,33 +393,17 @@ main {
 // Mobile responsive styles
 @media (max-width: 639px) {
     nav {
-        margin-top: 1rem;
-        padding: 0 1rem;
+        padding: 1.5rem 1rem 2rem 1rem;
 
         .nav-inner {
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.5rem;
             align-items: flex-start;
+            padding-bottom: 2rem;
         }
 
         .logo {
-            .logo-hash {
-                font-size: 1.5rem;
-                padding: 0.1rem 0.35rem;
-            }
-
-            .logo-rest {
-                font-size: 1.1rem;
-            }
-
-            .logo-divider {
-                font-size: 1.2rem;
-                margin: 0 0.25rem;
-            }
-
-            .logo-aziz {
-                font-size: 1.1rem;
-            }
+            font-size: 2rem;
         }
 
         .header-nav {
@@ -382,12 +412,24 @@ main {
 
             ul {
                 flex-wrap: wrap;
-                gap: 1rem;
+                gap: 0.5rem;
                 justify-content: flex-start;
             }
 
             a {
-                font-size: 0.875rem;
+                font-size: 0.8rem;
+                padding: 0.5rem 0.75rem;
+                min-height: 44px;
+                min-width: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &.active::after {
+                    bottom: 0.25rem;
+                    left: 0.75rem;
+                    right: 0.75rem;
+                }
             }
         }
     }
@@ -540,7 +582,7 @@ main {
     h3 {
         font-size: 1.5rem;
         font-weight: 500;
-        font-family: "Lora", ui-serif, Georgia, serif;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
         color: $stone-700;
         margin-bottom: 0.5rem;
     }
@@ -599,16 +641,46 @@ main {
     }
 }
 
+// Post container with back arrow
+.post-container {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 2rem 2rem 0 2rem;
+
+    .back-arrow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: $stone-500;
+        text-decoration: none;
+        padding: 0.75rem;
+        margin-bottom: 2rem;
+        margin-left: -0.75rem;
+        border-radius: 0.375rem;
+        transition: all 0.2s ease;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        &:hover {
+            color: $stone-700;
+            background-color: rgba(214, 211, 209, 0.3);
+            transform: translateX(-2px);
+        }
+    }
+}
+
 // Post styles
 .post {
     max-width: 48rem;
     margin: 0 auto;
-    padding: 0 2rem;
 
     h1 {
         font-size: 2.5rem;
         font-weight: 600;
-        font-family: "Lora", ui-serif, Georgia, serif;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
         margin-bottom: 1rem;
         line-height: 1.2;
         color: $stone-700;
@@ -641,7 +713,7 @@ main {
     h4 {
         margin: 2.5rem 0 1rem 0;
         font-weight: 600;
-        font-family: "Lora", ui-serif, Georgia, serif;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
         line-height: 1.3;
         color: $stone-700;
     }
@@ -728,7 +800,7 @@ main {
     h1 {
         font-size: 2.5rem;
         font-weight: 600;
-        font-family: "Lora", ui-serif, Georgia, serif;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
         margin-bottom: 2rem;
         color: $stone-700;
     }
@@ -749,6 +821,183 @@ main {
 
         &:hover {
             color: $stone-500;
+        }
+    }
+}
+
+// Podcast list styles
+.podcast-list {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    .podcast-episode {
+        margin-bottom: 4rem;
+
+        .episode-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family: "Inter", system-ui, -apple-system, sans-serif;
+            color: $stone-700;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .episode-subtitle {
+            font-size: 1.125rem;
+            font-weight: 400;
+            font-family: "Inter", system-ui, -apple-system, sans-serif;
+            color: $stone-700;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .episode-description {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: $stone-600;
+            margin-bottom: 1rem;
+
+            p {
+                margin: 0 0 0.5rem 0;
+                display: inline;
+            }
+
+            strong {
+                font-weight: 600;
+            }
+
+            .more-link {
+                color: $stone-500;
+                text-decoration: none;
+                font-size: 0.95rem;
+                margin-left: 0.25rem;
+                white-space: nowrap;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .episode-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: $stone-500;
+            flex-wrap: wrap;
+
+            .play-icon {
+                font-size: 0.75rem;
+                color: $stone-400;
+            }
+
+            .duration {
+                color: $stone-500;
+            }
+
+            .get-podcast {
+                color: $stone-500;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .date {
+                color: $stone-400;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .podcast-list {
+        padding: 0 1rem;
+
+        .podcast-episode {
+            margin-bottom: 3rem;
+
+            .episode-title {
+                font-size: 1.25rem;
+            }
+
+            .episode-subtitle {
+                font-size: 1rem;
+            }
+
+            .episode-meta {
+                font-size: 0.8rem;
+
+                .date {
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .post-container {
+        padding: 1.5rem 1rem 0 1rem;
+
+        .back-arrow {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .post {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+// Pagination styles
+.pagination {
+    max-width: 48rem;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $stone-300;
+    padding-top: 2rem;
+
+    .pagination-link {
+        color: $stone-600;
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+        transition: color 0.2s;
+
+        &:hover:not(.disabled) {
+            color: $stone-700;
+        }
+
+        &.disabled {
+            color: $stone-400;
+            cursor: default;
+        }
+    }
+
+    .pagination-info {
+        color: $stone-500;
+        font-size: 0.9rem;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+    }
+}
+
+@media (max-width: 639px) {
+    .pagination {
+        padding: 0 1rem;
+        padding-top: 2rem;
+        font-size: 0.85rem;
+
+        .pagination-info {
+            font-size: 0.8rem;
         }
     }
 }
