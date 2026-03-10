@@ -6,9 +6,9 @@ layout: default
   {% for post in paginator.posts %}
   <article class="podcast-episode">
     <h2 class="episode-title">{{ post.title }}</h2>
-    {% if post.description %}
+    <!--{% if post.description %}
     <h3 class="episode-subtitle">{{ post.description }}</h3>
-    {% endif %}
+    {% endif %}-->
 
     <div class="episode-description">
       {% if post.excerpt %}
@@ -31,17 +31,27 @@ layout: default
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link">← Newer</a>
+  <a
+    href="{{ paginator.previous_page_path | relative_url }}"
+    class="pagination-link"
+    >← Newer</a
+  >
   {% else %}
-    <span class="pagination-link disabled">← Newer</span>
+  <span class="pagination-link disabled">← Newer</span>
   {% endif %}
 
-  <span class="pagination-info">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  <span class="pagination-info"
+    >Page {{ paginator.page }} of {{ paginator.total_pages }}</span
+  >
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link">Older →</a>
+  <a
+    href="{{ paginator.next_page_path | relative_url }}"
+    class="pagination-link"
+    >Older →</a
+  >
   {% else %}
-    <span class="pagination-link disabled">Older →</span>
+  <span class="pagination-link disabled">Older →</span>
   {% endif %}
 </div>
 {% endif %}
