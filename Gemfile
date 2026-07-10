@@ -8,3 +8,4 @@ gem "html-proofer"
 
 # For local server if Ruby >= 3.0
 gem "webrick"
+gem "logger"
