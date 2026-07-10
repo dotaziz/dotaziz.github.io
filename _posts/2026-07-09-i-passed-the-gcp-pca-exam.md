@@ -34,7 +34,7 @@ Looking back, the practice tests found in the module files were quite similar to
 
 A significant portion of the exam (about 14 out of 50 questions) is based on case studies. I specifically received the Altostrat Media and KnightMotives Automotive case studies. You don't need to memorize these, as they're provided in a side column during the exam, but being comfortable with them is crucial.
 
-My preparation was quite difficult as I had to simultaneously juggle learning for missed quizzes and preparing for the exam, working with Insurerity, and working on my final year project. This was quite challenging and stressful. I couldn't have a full sleep schedule for almost the whole of June. 
+My preparation was quite difficult as I had to simultaneously juggle studying for missed quizzes and final year exams (I was in exams week), preparing for the PCA exam, working with Insurerity, and working on my final year project. This was quite challenging and stressful. I couldn't have a full sleep schedule for almost the whole of June.
 
 I almost always feared that I'd fail the exam and often criticized myself for not taking the ACE exam instead. The sheer amount of information I needed to know and load into my brain was exhausting, coupled with other pressing responsibilities I had to attend to.
 
