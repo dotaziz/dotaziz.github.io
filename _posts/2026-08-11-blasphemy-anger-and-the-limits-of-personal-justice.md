@@ -15,7 +15,7 @@ Certain issues are extremely sensitive because they touch deeply held moral valu
 - Genocide and war crimes
 - Sexual violence and child abuse
 
-These issues tend to evoke strong emotions because societies have developed powerful social taboos around them.
+These issues tend to evoke strong emotions, which is one reason societies have developed powerful social taboos around them.
 
 But these taboos aren't all the same. Some exist because certain things represent dehumanization or discrimination; others are connected to horrific historical events, religious beliefs, or direct harm to people.
 
@@ -79,11 +79,11 @@ We should strongly condemn the insult against the Prophet ﷺ while also strongl
 
 If a genuine offence has occurred, the appropriate authorities should handle it through the applicable legal process.
 
-We can condemn blasphemy without endorsing murder.
+We should condemn blasphemy without endorsing murder.
 
-We can understand the anger without endorsing violence.
+We should understand the anger without endorsing violence.
 
-We can defend the sanctity of the Prophet ﷺ without defending vigilantism.
+We should defend the sanctity of the Prophet ﷺ without defending vigilantism.
 
 And we can believe a government is unjust without believing that every individual therefore has a personal mandate to overthrow it through violence.
 
