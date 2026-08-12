@@ -29,7 +29,7 @@ Now consider the recent videos in Ghana, involving an Imam calling for the killi
 
 I am not justifying the call for violence, but hear me out.
 
-As Muslims, we should not pretend that an insult against the Prophet ﷺ is insignificant. The Prophet Muhammad ﷺ occupies an exceptionally sacred position in Islam. We love him deeply, and an insult against him is naturally going to cause profound anger and hurt among Muslims.
+As Muslims, we do not pretend that an insult against the Prophet ﷺ is insignificant, any Muslim who claims otherwise is clearly a HYPOCRITE. The Prophet Muhammad ﷺ occupies an exceptionally sacred position in Islam. We love him deeply, and an insult against him is naturally going to cause profound anger and hurt among Muslims.
 
 Someone who understands the position of the Prophet ﷺ in Islam should understand why Muslims are deeply disturbed by such speech.
 
