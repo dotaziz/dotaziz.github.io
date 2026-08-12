@@ -25,7 +25,7 @@ Don't be surprised if you use a racial slur in certain parts of the East Oakland
 
 The same principle applies to religious blasphemy.
 
-Now consider the recent videos in Ghana, involving an Imam calling for the killing of people who insult or denigrate the Prophet Muhammad ﷺ, apparently in response to a video in which someone insulted the Prophet ﷺ.
+Now consider the recent videos in Ghana, involving an Imam calling for the killing of people who insult or denigrate the Prophet Muhammad ﷺ, evidently in response to a video in which someone insulted the Prophet ﷺ.
 
 I am not justifying the call for violence, but hear me out.
 
